@@ -60,18 +60,16 @@
         function($c) use ($last_cycle_d) {return get_italian_date($c['DATA_INIZIO_AMMINISTRATIVA'])->getTimestamp() >= $last_cycle_d->getTimestamp(); }
     );
     foreach($comuni_old as $k => $c) {
-        if (!isset($c['codice'])) {
-            var_dump($c);
-            exit;
-        }
-        $filtered = array_values( array_filter($soppressi, function($cs) use ($c) {return $cs['PRO_COM_T'] == $c['codice'];}) );
-        if (count($filtered) > 0) {
-            unset($comuni_old[$k]['pendingDate']);
-            $d = get_italian_date($filtered[0]['DATA_INIZIO_AMMINISTRATIVA']);
-            $d->setTimezone(new DateTimeZone("UTC"));
-            $comuni_old[$k]['dataSoppressione'] = $d->format('Y-m-d\TH:i:s.v\Z');
-            $comuni_old[$k]['soppresso'] = true;
-            $comuni_old[$k]['verso'] = $filtered[0]['PRO_COM_T_REL'];
+        if (isset($c['codice']) && $c['codice'] && (!$c['soppresso'] || ($c['soppresso'] && isset($c['pendingDate']) && $c['pendingDate']))) {
+            $filtered = array_values( array_filter($soppressi, function($cs) use ($c) {return $cs['PRO_COM_T'] == $c['codice'];}) );
+            if (count($filtered) > 0) {
+                unset($comuni_old[$k]['pendingDate']);
+                $d = get_italian_date($filtered[0]['DATA_INIZIO_AMMINISTRATIVA']);
+                $d->setTimezone(new DateTimeZone("UTC"));
+                $comuni_old[$k]['dataSoppressione'] = $d->format('Y-m-d\TH:i:s.v\Z');
+                $comuni_old[$k]['soppresso'] = true;
+                $comuni_old[$k]['verso'] = $filtered[0]['PRO_COM_T_REL'];
+            }
         }
     }
     $chars = 'ABCDEFGHILMNOPQRSTUVZ';
