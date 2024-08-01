@@ -10,7 +10,7 @@ Oltre alle informazioni già presenti in [Comuni ITA API](https://comuni-ita.rea
 
 Alcuni comuni non possiedono il la proprietà `codice` corrispondente al codice ISTAT; questo perché o non è mai stato assegnato o perché trattasi di codice fittizio.
 
-In caso di comuni non più presenti nella lista dei comuni attivi recuperata da [Comuni ITA API](https://comuni-ita.readme.io/) e la cui data di soppressione non è fosse rilevata dai dati recuperati da [Comuni soppressi e non ricostituiti](https://situas.istat.it/web/#/home/in-evidenza?id=128&dateFrom=1861-03-17), lo script provvedrà a impostare come `dataSoppressione` la data corrente, creerà sui comuni la proprietà `pendingDate` e imposterà quest'ultima su `true`, in attesa di ulteriori aggiornamenti riportanti le date corrette.
+In caso di comuni non più presenti nella lista dei comuni attivi recuperata da [Comuni ITA API](https://comuni-ita.readme.io/) e la cui data di soppressione non fosse rilevata dai dati recuperati da [Comuni soppressi e non ricostituiti](https://situas.istat.it/web/#/home/in-evidenza?id=128&dateFrom=1861-03-17), lo script provvedrà a impostare come `dataSoppressione` la data corrente, creerà sui comuni la proprietà `pendingDate` e imposterà quest'ultima su `true`, in attesa di ulteriori aggiornamenti riportanti le date corrette.
 
 `comuni-update.php` legge le informazioni sull'ultimo ciclo da `bk/last-cycle.txt`, aggiorna l'ultima lista dei comuni, la salva in un nuovo file json dentro `bk/` e memorizza le informazioni del ciclo concluso nel file `bk/last-cycle.txt`.
 
