@@ -2,8 +2,8 @@
 Script bash/php per l'aggiornamento dei comuni italiani attivi e soppressi su file json.
 
 Utilizza le seguenti risorse:
-- [Comuni ITA API](https://comuni-ita.readme.io/) come API per l'aggiornamento dei comuni attivi e delle province
-- la lista [Comuni soppressi e non ricostituiti](https://situas.istat.it/web/#/home/in-evidenza?id=128&dateFrom=1861-03-17) disponibile su [https://situas.istat.it](https://situas.istat.it/) per l'aggiornamento dei comuni soppressi
+- [Comuni ITA API](https://comuni-ita.readme.io/) come API per l'aggiornamento dei comuni attivi e delle province;
+- la lista [Comuni soppressi e non ricostituiti](https://situas.istat.it/web/#/home/in-evidenza?id=128&dateFrom=1861-03-17) disponibile su [https://situas.istat.it](https://situas.istat.it/) per l'aggiornamento dei comuni soppressi;
 - la pagina https://www.comuni-italiani.it/cap/multicap.html per l'aggiornamento dei comuni multiCAP.
 
 Oltre alle informazioni già presenti in [Comuni ITA API](https://comuni-ita.readme.io/), recupera e salva le informazioni sui comuni soppressi e la loro data di soppressione. I comuni soppressi senza data di soppressione sono della fine dell'Ottocento, dunque sono da considerarsi non validi ai fini della validazione di una data di nascita (se ci sono superstiti, fateci un fischio! XD)
