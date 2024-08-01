@@ -9,7 +9,7 @@ fi
 if [ ! -L "$SCRIPT_DIR/comuni.json" ]; then
     ln -s "$SCRIPT_DIR/bk/$LAST_CYCLE_FILE" "$SCRIPT_DIR/comuni.json"
 fi
-php "$SCRIPT_DIR/comuni-update.php" && \
+php "$SCRIPT_DIR/comuni-update.php" "$@" && \
 LAST_CYCLE_FILE=$(cat "$SCRIPT_DIR/bk/last-cycle.txt") && \
 LAST_CYCLE_FILE=${LAST_CYCLE_FILE%,*} && \
 ln -sfn "$SCRIPT_DIR/bk/$LAST_CYCLE_FILE" "$SCRIPT_DIR/comuni.json"
