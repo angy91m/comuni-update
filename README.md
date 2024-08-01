@@ -6,9 +6,9 @@ Utilizza le seguenti risorse:
 - la lista [Comuni soppressi e non ricostituiti](https://situas.istat.it/web/#/home/in-evidenza?id=128&dateFrom=1861-03-17) disponibile su [https://situas.istat.it](https://situas.istat.it/) per l'aggiornamento dei comuni soppressi;
 - la pagina https://www.comuni-italiani.it/cap/multicap.html per l'aggiornamento dei comuni multiCAP.
 
-Oltre alle informazioni già presenti in [Comuni ITA API](https://comuni-ita.readme.io/), recupera e salva le informazioni sui comuni soppressi e la loro data di soppressione. I comuni soppressi senza data di soppressione sono della fine dell'Ottocento, dunque sono da considerarsi non validi ai fini della validazione di una data di nascita (se ci sono superstiti, fateci un fischio! XD)
+Oltre alle informazioni già presenti in [Comuni ITA API](https://comuni-ita.readme.io/), recupera e salva le informazioni sui comuni soppressi e la loro data di soppressione. I comuni soppressi senza data di soppressione sono cessati intorno alla fine dell'Ottocento, dunque sono da considerarsi non validi ai fini della validazione di una data di nascita (se ci sono superstiti, fateci un fischio! XD)
 
-Alcuni comuni non possiedono il la proprietà `codice` corrispondente al codice ISTAT; questo perché o non è mai stato assegnato o perché trattasi di codice fittizio.
+Alcuni comuni soppressi non possiedono la proprietà `codice` corrispondente al codice ISTAT; questo perché o non è mai stato assegnato o perché trattasi di codice fittizio.
 
 In caso di comuni non più presenti nella lista dei comuni attivi recuperata da [Comuni ITA API](https://comuni-ita.readme.io/) e la cui data di soppressione non fosse rilevata dai dati recuperati da [Comuni soppressi e non ricostituiti](https://situas.istat.it/web/#/home/in-evidenza?id=128&dateFrom=1861-03-17), lo script provvedrà a impostare come `dataSoppressione` la data corrente, creerà sui comuni la proprietà `pendingDate` e imposterà quest'ultima su `true`, in attesa di ulteriori aggiornamenti riportanti le date corrette.
 
