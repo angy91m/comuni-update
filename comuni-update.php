@@ -131,7 +131,12 @@
                         $d->setTimezone(new DateTimeZone("UTC"));
                         $comuni_old[$k]['dataSoppressione'] = $d->format('Y-m-d\TH:i:s.v\Z');
                         $comuni_old[$k]['soppresso'] = true;
-                        $comuni_old[$k]['verso'] = $filtered[0]['PRO_COM_T_REL'];
+                        if (!isset($comuni_old[$k]['verso'])) {
+                            $comuni_old[$k]['verso'] = [];
+                        }
+                    }
+                    foreach( $filtered as $cf ) {
+                        $comuni_old[$k]['verso'][] = $cf['PRO_COM_T_REL'];
                     }
                 }
             }
