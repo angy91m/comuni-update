@@ -25,7 +25,7 @@ In caso di comuni non più presenti nella lista dei comuni attivi recuperata da 
 
 `--no-preserve-multicap` -> Aggiorna il CAP dei comuni basandosi sul CAP ricavato da [Comuni ITA API](https://comuni-ita.readme.io/) anche per i comuni multiCAP (non ha effetto se l'aggiornamento dei comuni attivi viene saltato)
 
-`--skip-on-error=nomefaseX,nomefaseY` -> Salta l'aggiornamento per i nomi delle fasi indicati. I nomi possono essere: `attivi`, `soppressi`, `multicap`. Ad esempio, se si vuole continuare l'aggiornamento anche in caso di errore download file in tutte e tre le fasi l'opzione sarà `--skip-on-error=attivi,soppressi,multicap`
+`--skip-on-error=nomefaseX,nomefaseY` -> Salta l'aggiornamento in caso di errore (invece di bloccare il processo) per i nomi delle fasi indicati. I nomi possono essere: `attivi`, `soppressi`, `multicap`. Ad esempio, se si vuole continuare l'aggiornamento anche in caso di errore download file in tutte e tre le fasi l'opzione sarà `--skip-on-error=attivi,soppressi,multicap`
 
 
 Godetevelo!
