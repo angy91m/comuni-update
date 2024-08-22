@@ -14,8 +14,9 @@
     }
     $last_cycle = explode(',', file_get_contents(__DIR__ . '/bk/last-cycle.txt'));
     $comuni_old = json_decode(file_get_contents(__DIR__ . "/bk/$last_cycle[0]"), true);
-    
-    $last_cycle_d_arr = array_map(function($v){return intval($v);}, explode('-',$last_cycle[1]));
+    $province_old_filename = $last_cycle[1];
+    $province_new = false;
+    $last_cycle_d_arr = array_map(function($v){return intval($v);}, explode('-',$last_cycle[2]));
     $last_cycle_d = date_create();
     $last_cycle_d->setDate(...$last_cycle_d_arr);
     $last_cycle_d->setTime(0,0,0,0);
@@ -35,6 +36,10 @@
         }
         if (!$skip_phase) {
             $province = json_decode($province,true);
+            $province_new = array_map(function($p) {
+                $p['soppressa'] = false;
+                return $p;
+            },$province);
             $comuni_attivi = file_get_contents('https://axqvoqvbfjpaamphztgd.functions.supabase.co/comuni');
             if ($comuni_attivi === false) {
                 if (in_array('attivi', $skip_on_error))  {
@@ -209,6 +214,22 @@
         $d->setTimestamp($md);
         $last_cycle_s = $d->format('Y-m-d');
     }
-    $filename = 'comuni-all-' . date_create()->format('YmdHis') . '.json';
-    file_put_contents(__DIR__ . "/bk/$filename", json_encode($comuni_old, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-    file_put_contents(__DIR__ . '/bk/last-cycle.txt', $filename . ',' . $last_cycle_s);
+    $end_filename = date_create()->format('YmdHis') . '.json';
+    $comuni_filename = 'comuni-all-' . $end_filename;
+    $province_filename = $province_old_filename;
+    if ($province_new) {
+        $province_filename = 'province-all-' . $end_filename;
+        foreach ( $comuni_old as $c ) {
+            if (isset($c['provincia'])) {
+                $found = array_filter($province_new, function ($p) use ($c) {return $p['sigla'] == $c['provincia']['sigla'];});
+                if (!count($found)) {
+                    $p = $c['provincia'];
+                    $p['soppressa'] = true;
+                    $province_new[] = $p;
+                }
+            }
+        }
+        file_put_contents(__DIR__ . "/bk/$province_filename",json_encode($province_new, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    }
+    file_put_contents(__DIR__ . "/bk/$comuni_filename", json_encode($comuni_old, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    file_put_contents(__DIR__ . '/bk/last-cycle.txt', $comuni_filename . ',' . $province_filename . ',' . $last_cycle_s);
