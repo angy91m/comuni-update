@@ -1,0 +1,769 @@
+[
+    {
+        "codice": "084",
+        "nome": "Agrigento",
+        "sigla": "AG",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "006",
+        "nome": "Alessandria",
+        "sigla": "AL",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "042",
+        "nome": "Ancona",
+        "sigla": "AN",
+        "regione": "Marche",
+        "soppressa": false
+    },
+    {
+        "codice": "051",
+        "nome": "Arezzo",
+        "sigla": "AR",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "044",
+        "nome": "Ascoli Piceno",
+        "sigla": "AP",
+        "regione": "Marche",
+        "soppressa": false
+    },
+    {
+        "codice": "005",
+        "nome": "Asti",
+        "sigla": "AT",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "064",
+        "nome": "Avellino",
+        "sigla": "AV",
+        "regione": "Campania",
+        "soppressa": false
+    },
+    {
+        "codice": "072",
+        "nome": "Bari",
+        "sigla": "BA",
+        "regione": "Puglia",
+        "soppressa": false
+    },
+    {
+        "codice": "110",
+        "nome": "Barletta-Andria-Trani",
+        "sigla": "BT",
+        "regione": "Puglia",
+        "soppressa": false
+    },
+    {
+        "codice": "025",
+        "nome": "Belluno",
+        "sigla": "BL",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "062",
+        "nome": "Benevento",
+        "sigla": "BN",
+        "regione": "Campania",
+        "soppressa": false
+    },
+    {
+        "codice": "016",
+        "nome": "Bergamo",
+        "sigla": "BG",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "096",
+        "nome": "Biella",
+        "sigla": "BI",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "037",
+        "nome": "Bologna",
+        "sigla": "BO",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "021",
+        "nome": "Bolzano",
+        "sigla": "BZ",
+        "regione": "Trentino Alto Adige",
+        "soppressa": false
+    },
+    {
+        "codice": "017",
+        "nome": "Brescia",
+        "sigla": "BS",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "074",
+        "nome": "Brindisi",
+        "sigla": "BR",
+        "regione": "Puglia",
+        "soppressa": false
+    },
+    {
+        "codice": "092",
+        "nome": "Cagliari",
+        "sigla": "CA",
+        "regione": "Sardegna",
+        "soppressa": false
+    },
+    {
+        "codice": "085",
+        "nome": "Caltanissetta",
+        "sigla": "CL",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "070",
+        "nome": "Campobasso",
+        "sigla": "CB",
+        "regione": "Molise",
+        "soppressa": false
+    },
+    {
+        "codice": "061",
+        "nome": "Caserta",
+        "sigla": "CE",
+        "regione": "Campania",
+        "soppressa": false
+    },
+    {
+        "codice": "087",
+        "nome": "Catania",
+        "sigla": "CT",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "079",
+        "nome": "Catanzaro",
+        "sigla": "CZ",
+        "regione": "Calabria",
+        "soppressa": false
+    },
+    {
+        "codice": "069",
+        "nome": "Chieti",
+        "sigla": "CH",
+        "regione": "Abruzzo",
+        "soppressa": false
+    },
+    {
+        "codice": "013",
+        "nome": "Como",
+        "sigla": "CO",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "078",
+        "nome": "Cosenza",
+        "sigla": "CS",
+        "regione": "Calabria",
+        "soppressa": false
+    },
+    {
+        "codice": "019",
+        "nome": "Cremona",
+        "sigla": "CR",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "101",
+        "nome": "Crotone",
+        "sigla": "KR",
+        "regione": "Calabria",
+        "soppressa": false
+    },
+    {
+        "codice": "004",
+        "nome": "Cuneo",
+        "sigla": "CN",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "086",
+        "nome": "Enna",
+        "sigla": "EN",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "109",
+        "nome": "Fermo",
+        "sigla": "FM",
+        "regione": "Marche",
+        "soppressa": false
+    },
+    {
+        "codice": "038",
+        "nome": "Ferrara",
+        "sigla": "FE",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "048",
+        "nome": "Firenze",
+        "sigla": "FI",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "071",
+        "nome": "Foggia",
+        "sigla": "FG",
+        "regione": "Puglia",
+        "soppressa": false
+    },
+    {
+        "codice": "040",
+        "nome": "Forlì-Cesena",
+        "sigla": "FC",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "060",
+        "nome": "Frosinone",
+        "sigla": "FR",
+        "regione": "Lazio",
+        "soppressa": false
+    },
+    {
+        "codice": "010",
+        "nome": "Genova",
+        "sigla": "GE",
+        "regione": "Liguria",
+        "soppressa": false
+    },
+    {
+        "codice": "031",
+        "nome": "Gorizia",
+        "sigla": "GO",
+        "regione": "Friuli Venezia Giulia",
+        "soppressa": false
+    },
+    {
+        "codice": "053",
+        "nome": "Grosseto",
+        "sigla": "GR",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "008",
+        "nome": "Imperia",
+        "sigla": "IM",
+        "regione": "Liguria",
+        "soppressa": false
+    },
+    {
+        "codice": "094",
+        "nome": "Isernia",
+        "sigla": "IS",
+        "regione": "Molise",
+        "soppressa": false
+    },
+    {
+        "codice": "066",
+        "nome": "L'Aquila",
+        "sigla": "AQ",
+        "regione": "Abruzzo",
+        "soppressa": false
+    },
+    {
+        "codice": "011",
+        "nome": "La Spezia",
+        "sigla": "SP",
+        "regione": "Liguria",
+        "soppressa": false
+    },
+    {
+        "codice": "059",
+        "nome": "Latina",
+        "sigla": "LT",
+        "regione": "Lazio",
+        "soppressa": false
+    },
+    {
+        "codice": "075",
+        "nome": "Lecce",
+        "sigla": "LE",
+        "regione": "Puglia",
+        "soppressa": false
+    },
+    {
+        "codice": "097",
+        "nome": "Lecco",
+        "sigla": "LC",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "049",
+        "nome": "Livorno",
+        "sigla": "LI",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "098",
+        "nome": "Lodi",
+        "sigla": "LO",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "046",
+        "nome": "Lucca",
+        "sigla": "LU",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "043",
+        "nome": "Macerata",
+        "sigla": "MC",
+        "regione": "Marche",
+        "soppressa": false
+    },
+    {
+        "codice": "020",
+        "nome": "Mantova",
+        "sigla": "MN",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "045",
+        "nome": "Massa-Carrara",
+        "sigla": "MS",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "077",
+        "nome": "Matera",
+        "sigla": "MT",
+        "regione": "Basilicata",
+        "soppressa": false
+    },
+    {
+        "codice": "083",
+        "nome": "Messina",
+        "sigla": "ME",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "015",
+        "nome": "Milano",
+        "sigla": "MI",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "036",
+        "nome": "Modena",
+        "sigla": "MO",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "108",
+        "nome": "Monza e della Brianza",
+        "sigla": "MB",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "063",
+        "nome": "Napoli",
+        "sigla": "NA",
+        "regione": "Campania",
+        "soppressa": false
+    },
+    {
+        "codice": "003",
+        "nome": "Novara",
+        "sigla": "NO",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "091",
+        "nome": "Nuoro",
+        "sigla": "NU",
+        "regione": "Sardegna",
+        "soppressa": false
+    },
+    {
+        "codice": "095",
+        "nome": "Oristano",
+        "sigla": "OR",
+        "regione": "Sardegna",
+        "soppressa": false
+    },
+    {
+        "codice": "028",
+        "nome": "Padova",
+        "sigla": "PD",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "082",
+        "nome": "Palermo",
+        "sigla": "PA",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "034",
+        "nome": "Parma",
+        "sigla": "PR",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "018",
+        "nome": "Pavia",
+        "sigla": "PV",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "054",
+        "nome": "Perugia",
+        "sigla": "PG",
+        "regione": "Umbria",
+        "soppressa": false
+    },
+    {
+        "codice": "041",
+        "nome": "Pesaro e Urbino",
+        "sigla": "PU",
+        "regione": "Marche",
+        "soppressa": false
+    },
+    {
+        "codice": "068",
+        "nome": "Pescara",
+        "sigla": "PE",
+        "regione": "Abruzzo",
+        "soppressa": false
+    },
+    {
+        "codice": "033",
+        "nome": "Piacenza",
+        "sigla": "PC",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "050",
+        "nome": "Pisa",
+        "sigla": "PI",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "047",
+        "nome": "Pistoia",
+        "sigla": "PT",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "093",
+        "nome": "Pordenone",
+        "sigla": "PN",
+        "regione": "Friuli Venezia Giulia",
+        "soppressa": false
+    },
+    {
+        "codice": "076",
+        "nome": "Potenza",
+        "sigla": "PZ",
+        "regione": "Basilicata",
+        "soppressa": false
+    },
+    {
+        "codice": "100",
+        "nome": "Prato",
+        "sigla": "PO",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "088",
+        "nome": "Ragusa",
+        "sigla": "RG",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "039",
+        "nome": "Ravenna",
+        "sigla": "RA",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "080",
+        "nome": "Reggio Calabria",
+        "sigla": "RC",
+        "regione": "Calabria",
+        "soppressa": false
+    },
+    {
+        "codice": "035",
+        "nome": "Reggio nell'Emilia",
+        "sigla": "RE",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "057",
+        "nome": "Rieti",
+        "sigla": "RI",
+        "regione": "Lazio",
+        "soppressa": false
+    },
+    {
+        "codice": "099",
+        "nome": "Rimini",
+        "sigla": "RN",
+        "regione": "Emilia Romagna",
+        "soppressa": false
+    },
+    {
+        "codice": "058",
+        "nome": "Roma",
+        "sigla": "RM",
+        "regione": "Lazio",
+        "soppressa": false
+    },
+    {
+        "codice": "029",
+        "nome": "Rovigo",
+        "sigla": "RO",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "065",
+        "nome": "Salerno",
+        "sigla": "SA",
+        "regione": "Campania",
+        "soppressa": false
+    },
+    {
+        "codice": "090",
+        "nome": "Sassari",
+        "sigla": "SS",
+        "regione": "Sardegna",
+        "soppressa": false
+    },
+    {
+        "codice": "009",
+        "nome": "Savona",
+        "sigla": "SV",
+        "regione": "Liguria",
+        "soppressa": false
+    },
+    {
+        "codice": "052",
+        "nome": "Siena",
+        "sigla": "SI",
+        "regione": "Toscana",
+        "soppressa": false
+    },
+    {
+        "codice": "089",
+        "nome": "Siracusa",
+        "sigla": "SR",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "014",
+        "nome": "Sondrio",
+        "sigla": "SO",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "111",
+        "nome": "Sud Sardegna",
+        "sigla": "SU",
+        "regione": "Sardegna",
+        "soppressa": false
+    },
+    {
+        "codice": "073",
+        "nome": "Taranto",
+        "sigla": "TA",
+        "regione": "Puglia",
+        "soppressa": false
+    },
+    {
+        "codice": "067",
+        "nome": "Teramo",
+        "sigla": "TE",
+        "regione": "Abruzzo",
+        "soppressa": false
+    },
+    {
+        "codice": "055",
+        "nome": "Terni",
+        "sigla": "TR",
+        "regione": "Umbria",
+        "soppressa": false
+    },
+    {
+        "codice": "001",
+        "nome": "Torino",
+        "sigla": "TO",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "081",
+        "nome": "Trapani",
+        "sigla": "TP",
+        "regione": "Sicilia",
+        "soppressa": false
+    },
+    {
+        "codice": "022",
+        "nome": "Trento",
+        "sigla": "TN",
+        "regione": "Trentino Alto Adige",
+        "soppressa": false
+    },
+    {
+        "codice": "026",
+        "nome": "Treviso",
+        "sigla": "TV",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "032",
+        "nome": "Trieste",
+        "sigla": "TS",
+        "regione": "Friuli Venezia Giulia",
+        "soppressa": false
+    },
+    {
+        "codice": "030",
+        "nome": "Udine",
+        "sigla": "UD",
+        "regione": "Friuli Venezia Giulia",
+        "soppressa": false
+    },
+    {
+        "codice": "007",
+        "nome": "Valle d'Aosta",
+        "sigla": "AO",
+        "regione": "Valle d'Aosta",
+        "soppressa": false
+    },
+    {
+        "codice": "012",
+        "nome": "Varese",
+        "sigla": "VA",
+        "regione": "Lombardia",
+        "soppressa": false
+    },
+    {
+        "codice": "027",
+        "nome": "Venezia",
+        "sigla": "VE",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "103",
+        "nome": "Verbano-Cusio-Ossola",
+        "sigla": "VB",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "002",
+        "nome": "Vercelli",
+        "sigla": "VC",
+        "regione": "Piemonte",
+        "soppressa": false
+    },
+    {
+        "codice": "023",
+        "nome": "Verona",
+        "sigla": "VR",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "102",
+        "nome": "Vibo Valentia",
+        "sigla": "VV",
+        "regione": "Calabria",
+        "soppressa": false
+    },
+    {
+        "codice": "024",
+        "nome": "Vicenza",
+        "sigla": "VI",
+        "regione": "Veneto",
+        "soppressa": false
+    },
+    {
+        "codice": "056",
+        "nome": "Viterbo",
+        "sigla": "VT",
+        "regione": "Lazio",
+        "soppressa": false
+    },
+    {
+        "codice": "701",
+        "nome": "Fiume",
+        "sigla": "FU",
+        "soppressa": true
+    },
+    {
+        "codice": "702",
+        "nome": "Pola",
+        "sigla": "PL",
+        "soppressa": true
+    },
+    {
+        "codice": "703",
+        "nome": "Zara",
+        "sigla": "ZA",
+        "soppressa": true
+    }
+]
