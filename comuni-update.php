@@ -2,7 +2,26 @@
     $skip_on_error = [];
     $soe_arr = array_values(array_filter($argv, function($v) {return str_starts_with($v, '--skip-on-error=');}));
     if (count($soe_arr) == 1) {
-        $skip_on_error = explode(',',explode('=', $soe_arr[0])[1]);
+        $skip_on_error = explode('=', $soe_arr[0]);
+        if (!isset($skip_on_error[1])){
+            file_put_contents('php://stderr', 'Invalid --skip-on-error parameter');
+            exit(1);
+        }
+        $skip_on_error = explode(',',$skip_on_error[1]);
+    }
+    $flush_files = array_filter($argv, function($v) {return str_starts_with($v, '--flush=');});
+    if (count($flush_files) == 1) {
+        $flush_files = explode('=',$flush_files);
+        if (!isset($flush_files[1]) || !is_numeric($flush_files[1])) {
+            file_put_contents('php://stderr', 'Invalid --flush parameter');
+            exit(1);
+        }
+        $flush_files = intval($flush_files[1]);
+        if ($flush_files <= 0) {
+            $flush_files = 0;
+        }
+    } else {
+        $flush_files = 0;
     }
     date_default_timezone_set('Europe/Rome');
     function get_italian_date($date) {
@@ -233,3 +252,23 @@
     }
     file_put_contents(__DIR__ . "/bk/$comuni_filename", json_encode($comuni_old, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     file_put_contents(__DIR__ . '/bk/last-cycle.txt', $comuni_filename . ',' . $province_filename . ',' . $last_cycle_s);
+    if ($flush_files) {
+        $bk_files = scandir(__DIR__ . "/bk");
+        $provincie_bk_files = [];
+        $comuni_bk_files = [];
+        foreach($bk_files as $f) {
+            if (str_starts_with($f, 'comuni-all-')) {
+                $comuni_bk_files[] = ['name' => $f, 'timestamp' => substr($f, 11, 14)];
+            }
+            if (str_starts_with($f, 'province-all-')) {
+                $provincie_bk_files[] = ['name' => $f, 'timestamp' => substr($f, 13, 14)];
+            }
+        }
+        usort($comuni_bk_files, function($a,$b) {return $a['timestamp'] < $b['timestamp'] ? 1 : ($a['timestamp'] > $b['timestamp'] ? -1 : 0);});
+        usort($provincie_bk_files, function($a,$b) {return $a['timestamp'] < $b['timestamp'] ? 1 : ($a['timestamp'] > $b['timestamp'] ? -1 : 0);});
+        $to_delete = array_slice($comuni_bk_files, $flush_files);
+        array_push($to_delete, ...array_slice($provincie_bk_files, $flush_files));
+        foreach($to_delete as $f) {
+            unlink(__DIR__ . '/bk/' . $f['name']);
+        }
+    }
