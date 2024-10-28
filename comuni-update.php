@@ -9,7 +9,7 @@
         }
         $skip_on_error = explode(',',$skip_on_error[1]);
     }
-    $flush_files = array_filter($argv, function($v) {return str_starts_with($v, '--flush=');});
+    $flush_files = array_values(array_filter($argv, function($v) {return str_starts_with($v, '--flush=');}));
     if (count($flush_files) == 1) {
         $flush_files = explode('=',$flush_files[0]);
         if (!isset($flush_files[1]) || !is_numeric($flush_files[1])) {
