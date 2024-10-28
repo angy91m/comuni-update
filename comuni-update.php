@@ -97,7 +97,7 @@
                         if ($c['codiceCatastale'] == $co['codiceCatastale']) {
                             $found = true;
                             $comuni_old[$k]['provincia'] = array_values(array_filter($province, function ($p) use ($c) {return $p['nome'] == $c['provincia']['nome'];}))[0];
-                            if ($c['cap'] && (count($comuni_old[$k]['cap']) == 1 || in_array('--no-preserve-multicap', $argv) )) {
+                            if (count($comuni_old[$k]['cap']) == 1 || in_array('--no-preserve-multicap', $argv)) {
                                 $comuni_old[$k]['cap'] = [$c['cap']];
                             }
                             $comuni_old[$k]['prefisso'] = $c['prefisso'];
