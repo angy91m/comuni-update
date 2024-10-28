@@ -258,10 +258,10 @@
         $comuni_bk_files = [];
         foreach($bk_files as $f) {
             if (str_starts_with($f, 'comuni-all-')) {
-                $comuni_bk_files[] = ['name' => $f, 'timestamp' => substr($f, 11, 14)];
+                $comuni_bk_files[] = ['name' => $f, 'timestamp' => intval(substr($f, 11, 14))];
             }
             if (str_starts_with($f, 'province-all-')) {
-                $provincie_bk_files[] = ['name' => $f, 'timestamp' => substr($f, 13, 14)];
+                $provincie_bk_files[] = ['name' => $f, 'timestamp' => intval(substr($f, 13, 14))];
             }
         }
         usort($comuni_bk_files, function($a,$b) {return $a['timestamp'] < $b['timestamp'] ? 1 : ($a['timestamp'] > $b['timestamp'] ? -1 : 0);});
